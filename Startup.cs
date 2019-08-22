@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using netcore_project.Models;
 
 namespace netcore_project
 {
@@ -24,7 +25,9 @@ namespace netcore_project
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddHttpClient<IApi, Api>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
