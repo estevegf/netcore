@@ -1,9 +1,10 @@
-﻿@{
+﻿@model ViewModels.EducationIndex
+@{
     ViewData["Title"] = "Education";
 }
 
 <div>
     <h1>Hello Education ASP .NET Core</h1>
-    <p>ASP .NET Core have @ViewData["stars"] stars on github</p>
+    <p>ASP .NET Core have @Model.Stars stars on github</p>
 </div>
 

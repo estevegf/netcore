@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using netcore_project.Models;
+using netcore_project.ViewModels;
 
 namespace netcore_project.Controllers
 {
@@ -15,10 +16,14 @@ namespace netcore_project.Controllers
         {
             _api = api;
         }
+
         public async Task<IActionResult> Index()
         {
-            ViewData["stars"] = await _api.GetStars();
-            return View("Pages/Education/Index.cshtml");
+            EducationIndex educationIndexViewModel = new EducationIndex()
+            {
+                Stars = await _api.GetStars(),
+            };
+            return View("Pages/Education/Index.cshtml", educationIndexViewModel);
         }
     }
 }
