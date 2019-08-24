@@ -1,9 +1,12 @@
 ﻿@model ViewModels.EducationIndex
 @{
     ViewData["Title"] = "Education";
+    var educationBanner = "images/banner.svg";
 }
 
-<div>
+<vc:banner image-url=@educationBanner></vc:banner>
+
+<div class="container">
     <h1>Hello Education ASP .NET Core</h1>
     <p>ASP .NET Core have @Model.Stars stars on github</p>
 </div>

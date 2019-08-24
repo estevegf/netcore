@@ -42,10 +42,34 @@ li {
     color: gray;
 }
 
+/* Banner styles
+-------------------------------------------------- */
+
+.banner {
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    left: 0;
+    right: 0;
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /* Body styles
 -------------------------------------------------- */
+body {
+    margin: 0;
+}  
+
 .bar-margin {
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 @media (min-width: 600px) {

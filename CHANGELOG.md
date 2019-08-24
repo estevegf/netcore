@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [v0.1.0; 22-08-2019]
 
 #### Added
+- 24/08/2019: New component banner
 - 24/08/2019: New navbar layout
 - 23/08/2019: Strongly Typed Education View
 - 22/08/2019: API Call
