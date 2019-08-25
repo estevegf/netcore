@@ -22,21 +22,21 @@ nav {
     margin-right: 1em;
 }
 
-ul {
+nav ul {
     display: flex;
     width: auto;
     margin-left: auto;
     list-style: none;
 }
 
-li {
+nav li {
     margin: 0 1em;
 }
 
-    li a {
-        color: black;
-        text-decoration: none;
-    }
+nav li a {
+    color: black;
+    text-decoration: none;
+}
 
 .link-hover:hover {
     color: gray;
@@ -44,7 +44,6 @@ li {
 
 /* Banner styles
 -------------------------------------------------- */
-
 .banner {
     height: 40vh;
     background-size: cover;
@@ -62,11 +61,38 @@ li {
     align-items: center;
 }
 
+/* Card styles
+-------------------------------------------------- */
+
+.card {
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.circular {
+    border-radius: 50%;
+    border: 2px solid green;
+    margin: 1em 2em 1em 3em;
+}
+
+@media (max-width: 600px) {
+    .circular {
+        margin: 1em 2em 1em 0;
+    }
+}
+
+ul {
+    padding-left: 0;
+}
+
+
 /* Body styles
 -------------------------------------------------- */
 body {
     margin: 0;
-}  
+}
 
 .bar-margin {
     margin-top: 50px;
@@ -84,8 +110,14 @@ body {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
     .container {
-        padding: 0 12em !important;
+        padding: 0 14em !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .l-6 {
+        width: 49.75% !important;
     }
 }
