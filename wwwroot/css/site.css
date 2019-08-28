@@ -61,31 +61,63 @@ nav li a {
     align-items: center;
 }
 
-/* Card styles
+/* Card Home styles
 -------------------------------------------------- */
 
-.card {
+.cardOne {
     display: inline-flex;
     width: 100%;
     -webkit-box-align: center;
     align-items: center;
 }
 
-.circular {
+.cardOne .circular {
     border-radius: 50%;
     border: 2px solid green;
     margin: 1em 2em 1em 3em;
 }
 
 @media (max-width: 600px) {
-    .circular {
+    .cardOne .circular {
         margin: 1em 2em 1em 0;
     }
 }
 
-ul {
+.cardOne ul {
     padding-left: 0;
 }
+
+/* Card Education styles
+-------------------------------------------------- */
+
+.cardTwo {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin: 1em 0;
+    background-color: gainsboro;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+.cardTwo .card-left {
+    display: flex;
+}
+
+.cardTwo .card-image {
+    border-radius: 5px 0 0 5px;
+}
+
+@media (max-width: 500px) {
+    .cardTwo {
+        display: grid;
+    }
+
+    .cardTwo .card-image {
+        border-radius: 5px 5px 0 0;
+    }
+}
+
 
 
 /* Body styles
@@ -96,6 +128,10 @@ body {
 
 .bar-margin {
     margin-top: 50px;
+}
+
+.container {
+    padding: 0 1em;
 }
 
 @media (min-width: 600px) {
@@ -120,4 +156,19 @@ body {
     .l-6 {
         width: 49.75% !important;
     }
+}
+
+@media (min-width: 500px) {
+    .s-6 {
+        width: 50% !important;
+    }
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
 }

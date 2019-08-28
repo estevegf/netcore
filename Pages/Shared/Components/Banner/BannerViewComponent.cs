@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace netcore_project.Pages.Components.Banner
+namespace netcore_project.Pages.shared.Components.Banner
 {
     public class BannerViewComponent : ViewComponent
     {

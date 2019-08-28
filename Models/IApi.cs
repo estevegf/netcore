@@ -7,7 +7,6 @@ namespace netcore_project.Models
 {
     public interface IApi
     {
-        Task<int> GetStars();
-
+        Task<Education[]> GetEducation();
     }
 }

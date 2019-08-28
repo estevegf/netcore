@@ -1,4 +1,4 @@
-﻿@model ViewModels.EducationIndex
+﻿@model Models.Education[]
 @{
     ViewData["Title"] = "Education";
     var educationBanner = "images/banner.svg";
@@ -7,7 +7,12 @@
 <vc:banner image-url=@educationBanner></vc:banner>
 
 <div class="container">
-    <h1>Hello Education ASP .NET Core</h1>
-    <p>ASP .NET Core have @Model.Stars stars on github</p>
+    <h2>Education</h2>
+    <section class="center">
+        @foreach (var education in @Model)
+        {
+            <vc:card education=@education></vc:card>
+        }
+    </section>
 </div>
 

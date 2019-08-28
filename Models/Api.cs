@@ -10,7 +10,7 @@ namespace netcore_project.Models
 {
     public class Api : IApi
     {
-        private const string BaseUrl = "https://api.github.com/";
+        private const string BaseUrl = "https://us-central1-tfg2019-ae3f8.cloudfunctions.net/api/";
         private readonly HttpClient _client;
 
         public Api(HttpClient client)
@@ -21,15 +21,16 @@ namespace netcore_project.Models
             _client.DefaultRequestHeaders.Add("User-Agent", "Esteve Genovard Ferriol");
         }
 
-        public async Task<int> GetStars()
+        public async Task<Education[]> GetEducation()
         {
-            var response = _client.GetStringAsync(BaseUrl + "repos/aspnet/AspNetCore");
+            var response = _client.GetStringAsync(BaseUrl + "education");
             var msg = await response;
-            var objectMsg = JsonConvert.DeserializeObject<Git>(msg);
+
+            Education[] education = JsonConvert.DeserializeObject<Education[]>(msg);
             Console.Write("--------------Message------------------");
             Console.Write(JsonConvert.DeserializeObject<object>(msg));
 
-            return objectMsg.Stargazers_count;
+            return education;
         }
     }
 }
