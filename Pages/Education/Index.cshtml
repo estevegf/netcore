@@ -1,13 +1,13 @@
 ﻿@model Models.Education[]
 @{
     ViewData["Title"] = "Education";
-    var educationBanner = "images/banner.svg";
+    var educationBanner = "images/banner_education.jpg";
 }
 
 <vc:banner image-url=@educationBanner></vc:banner>
 
 <div class="container">
-    <h2>Education</h2>
+    <h1>Education</h1>
     <section class="center">
         @foreach (var education in @Model)
         {
