@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [v0.1.0; 22-08-2019]
 
 #### Added
+- 15/09/2019: Lazy load images
+- 15/09/2019: Delete Console Logs
 - 29/08/2019: Responsive layout
 - 29/08/2019: Added Images
 - 29/08/2019: Montserrat Fonts

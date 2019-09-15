@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/icono.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" as="style">
     <title>@ViewData["Title"] - .Net Core</title>
 
     <link rel="stylesheet" href="~/css/site.css" />
@@ -19,7 +19,6 @@
         </main>
     </div>
 
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

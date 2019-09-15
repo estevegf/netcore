@@ -1,7 +1,7 @@
 ﻿@model Models.Education[]
 @{
     ViewData["Title"] = "Education";
-    var educationBanner = "images/banner_education.jpg";
+    var educationBanner = "images/banner_education-1920.webp";
 }
 
 <vc:banner image-url=@educationBanner></vc:banner>
@@ -15,4 +15,9 @@
         }
     </section>
 </div>
+
+@section Scripts
+{
+    <script src="~/js/lazysizes.js" asp-append-version="true"></script>
+}
 

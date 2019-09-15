@@ -27,8 +27,6 @@ namespace netcore_project.Models
             var msg = await response;
 
             Education[] education = JsonConvert.DeserializeObject<Education[]>(msg);
-            Console.Write("--------------Message------------------");
-            Console.Write(JsonConvert.DeserializeObject<object>(msg));
 
             return education;
         }
